@@ -14,6 +14,10 @@ function criarPessoa(event) {
 function exbirValorTotalParaSerPago(qtdDeAnos, taxaDeJurosAnual, valorDoEmprestimo){
     let valorTotal;
 
+    let valorDoEmprestimoFloat = parseFloat(valorDoEmprestimo);
+    let taxaDeJurosAnualFloat = parseFloat(taxaDeJurosAnual); 
+    let qtdDeAnosInt = parseInt(qtdDeAnos);
+
     for(let i = 0; i <= qtdDeAnos; i++){
         valorTotal = ((taxaDeJurosAnual/100) * valorDoEmprestimo) + valorDoEmprestimo;
     }
